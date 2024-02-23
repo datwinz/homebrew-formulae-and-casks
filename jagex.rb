@@ -20,5 +20,6 @@ cask "jagex" do
     "~/Jagex"
     "~/Library/Application Support/Jagex Launcher"
     "~/Library/Preferences/com.jagex.launcher.plist"
+  ]
 
 end
