@@ -17,9 +17,9 @@ cask "jagex" do
   uninstall delete: "/Applications/Jagex Launcher.app"
 
   zap trash: [
-    "~/Jagex"
-    "~/Library/Application Support/Jagex Launcher"
-    "~/Library/Preferences/com.jagex.launcher.plist"
+    "~/Jagex",
+    "~/Library/Application Support/Jagex Launcher",
+    "~/Library/Preferences/com.jagex.launcher.plist",
   ]
 
 end
