@@ -1,6 +1,6 @@
 cask "jagex" do
   version "0.32.0"
-  sha256 :no_check
+  sha256 "0015a2e3cca57352cb2ddc5c02c49b0bcc39ddd50e26fd2c506da6bdd00479c2"
 
   url "https://cdn.jagex.com/Jagex%20Launcher%20Installer.dmg"
   name "Jagex Launcher"
