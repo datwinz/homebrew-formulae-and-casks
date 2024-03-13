@@ -12,11 +12,11 @@ cask "glance-dt" do
   app "Glance.app"
 
   zap trash: [
-    "~/Library/Application Scripts/com.samuelmeuli.Glance",
-    "~/Library/Application Scripts/com.samuelmeuli.Glance.QLPlugin",
-    "~/Library/Containers/com.samuelmeuli.Glance",
-    "~/Library/Containers/com.samuelmeuli.Glance.QLPlugin",
-    "~/Library/Group Containers/group.com.samuelmeuli.glance",
+    "~/Library/Application Scripts/dev.datwinz.Glance",
+    "~/Library/Application Scripts/dev.datwinz.Glance.QLPlugin",
+    "~/Library/Containers/dev.datwinz.Glance",
+    "~/Library/Containers/dev.datwinz.Glance.QLPlugin",
+    "~/Library/Group Containers/group.com.datwinz.glance",
   ]
 
   caveats do
