@@ -1,6 +1,6 @@
 cask "jagex" do
-  version "0.32.0"
-  sha256 "0015a2e3cca57352cb2ddc5c02c49b0bcc39ddd50e26fd2c506da6bdd00479c2"
+  version "0.33.0"
+  sha256 "514bcc9a41efd2c8516caa7eb17fd68b8fd423716f8c246d4a1ef9fa9722825c"
 
   url "https://cdn.jagex.com/Jagex%20Launcher%20Installer.dmg"
   name "Jagex Launcher"
@@ -11,6 +11,8 @@ cask "jagex" do
     url :url
     strategy :extract_plist
   end
+
+  autoupdates true
 
   installer manual: "Jagex Launcher installer.app"
 
