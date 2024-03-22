@@ -12,7 +12,7 @@ cask "jagex" do
     strategy :extract_plist
   end
 
-  autoupdates true
+  auto_updates true
 
   installer manual: "Jagex Launcher installer.app"
 
