@@ -2,7 +2,7 @@ cask "neko" do
   version "1.1"
   sha256 "f42deaf56913ad258075a1309536054189e4fe38a237245fd90648f15502ace2"
 
-  url "https://github.com/mdonoughe/neko-mac/releases/tag/v#{version}/Neko-#{version}.dmg"
+  url "https://github.com/mdonoughe/neko-mac/releases/download/v#{version}/Neko-#{version}.dmg"
   name "猫"
   desc "Oneko in Cocoa (Neko for Mac OS X)"
   homepage "https://github.com/mdonoughe/neko-mac"
