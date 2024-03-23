@@ -1,6 +1,6 @@
 cask "glance-dt" do
   version "1.3.1"
-  sha256 "36b88a21a8c892c4d0767ecb8655037d03db6f32d72ff917314ad7b1bfda8abd"
+  sha256 "c8c5ebbfc2f160c5cdaee88f8fad5936b5940e779a6b5e8a5d0a33fee8ff6dcc"
 
   url "https://github.com/datwinz/glance/releases/download/v#{version}/Glance.zip"
   name "Glance"
