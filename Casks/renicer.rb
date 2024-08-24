@@ -10,6 +10,6 @@ cask "renicer" do
   app "renicer.app"
 
   zap trash: [
-    "/Users/floor/Library/Saved Application State/com.example.renicer.savedState"
+    "~/Library/Saved Application State/com.example.renicer.savedState"
   ]
 end
