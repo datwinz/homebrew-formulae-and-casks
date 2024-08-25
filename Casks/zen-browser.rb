@@ -16,7 +16,13 @@ cask "zen-browser" do
 
   livecheck do
     url :url
-    strategy :github_latest
+    regex /(\d+(?:\.\d+)+-\w+\.\d+)/i
+    strategy :github_latest do |json, regex|
+      match = json["tag_name"]&.match(regex)
+      next if match.blank?
+
+      match[1]
+    end
   end
 
   zap trash: [
