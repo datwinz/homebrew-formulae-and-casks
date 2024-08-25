@@ -1,22 +1,19 @@
 cask "zen-browser" do
   arch arm: "aarch64", intel: "x64"
-  version "1.0.0-a.28"
-  sha256  arm: "d174b63a5feedb065cf9d53676a8303fd6e3100ddf1a9501e10d32fa7a4799f9",
-          intel: "c5f633c38c45e5712f39039abee799de12dffd04a3d3e52805c7ed1f0fb551c0"
+
+  version "1.0.0-a.29"
+  sha256  arm:   "b9892f13bb1c8cd0c6ab0de73f923641ca0cce1bd68ecffaf683fd01fdd30251",
+          intel: "934b294ba30586a31c2c62e88ef95c42312f9e0172e9977d495c909934d5ba25"
 
   url "https://github.com/zen-browser/desktop/releases/download/#{version}/zen.macos-#{arch}.dmg",
-    verified: "github.com/zen-browser/desktop/"
+      verified: "github.com/zen-browser/desktop/"
   name "Zen Browser"
   desc "Experience tranquillity while browsing the web without people tracking you!"
-  homepage "https://www.zen-browser.app"
-
-  app "Zen Browser.app"
-
-  auto_updates true
+  homepage "https://www.zen-browser.app/"
 
   livecheck do
     url :url
-    regex /(\d+(?:\.\d+)+-\w+\.\d+)/i
+    regex(/(\d+(?:\.\d+)+-\w+\.\d+)/i)
     strategy :github_latest do |json, regex|
       match = json["tag_name"]&.match(regex)
       next if match.blank?
@@ -25,6 +22,10 @@ cask "zen-browser" do
     end
   end
 
+  auto_updates true
+
+  app "Zen Browser.app"
+
   zap trash: [
     "~/Library/Application Support/zen",
     "~/Library/Caches/Mozilla/updates/Applications/Zen Browser",
@@ -32,5 +33,4 @@ cask "zen-browser" do
     "~/Library/Preferences/org.mozilla.com.zen.browser.plist",
     "~/Library/Saved Application State/org.mozilla.com.zen.browser.savedState",
   ]
-
 end
