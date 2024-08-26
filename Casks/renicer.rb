@@ -7,6 +7,11 @@ cask "renicer" do
   desc "App to show nice values of processes and renice them"
   homepage "https://github.com/datwinz/renicer"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   app "renicer.app"
 
   zap trash: [
