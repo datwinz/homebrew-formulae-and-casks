@@ -12,14 +12,8 @@ cask "zen-browser" do
   homepage "https://www.zen-browser.app/"
 
   livecheck do
-    url :url
+    url :stable
     regex(/(\d+(?:\.\d+)+-\w+\.\d+)/i)
-    strategy :github_latest do |json, regex|
-      match = json["tag_name"]&.match(regex)
-      next if match.blank?
-
-      match[1]
-    end
   end
 
   auto_updates true
