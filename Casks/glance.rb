@@ -1,4 +1,4 @@
-cask "glance-dt" do
+cask "glance" do
   version "1.3.1"
   sha256 "c8c5ebbfc2f160c5cdaee88f8fad5936b5940e779a6b5e8a5d0a33fee8ff6dcc"
 
