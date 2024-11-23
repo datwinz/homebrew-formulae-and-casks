@@ -13,6 +13,7 @@ cask "renicer" do
   end
 
   app "renicer.app"
+  binary "#{appdir}/renicer.app/Contents/MacOS/renicer"
 
   zap trash: [
     "~/Library/Saved Application State/com.example.renicer.savedState",
