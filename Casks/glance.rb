@@ -21,6 +21,9 @@ cask "glance" do
 
   caveats do
     <<~EOS
+      =================================================
+      THIS APP IS SIGNED WITH A SELF-SIGNED CERTIFICATE
+      =================================================
       You must start #{appdir}/Glance.app once manually to setup the QuickLook plugin.
     EOS
   end
