@@ -1,6 +1,6 @@
 cask "glance" do
   version "1.3.1"
-  sha256 "501e20fda4b34a15027b6e4fa9f393131bbd227461e67bbc393757e59d434acf"
+  sha256 "b1a79299f06801be72a5557c35e8ae7733d437066f95cf0f6d084cbe4a43d25a"
 
   url "https://github.com/datwinz/glance/releases/download/v#{version}/Glance.zip"
   name "Glance"
@@ -21,9 +21,6 @@ cask "glance" do
 
   caveats do
     <<~EOS
-      =================================================
-      THIS APP IS SIGNED WITH A SELF-SIGNED CERTIFICATE
-      =================================================
       You must start #{appdir}/Glance.app once manually to setup the QuickLook plugin.
     EOS
   end
