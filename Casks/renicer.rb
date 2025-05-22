@@ -1,6 +1,6 @@
 cask "renicer" do
-  version "1.0.0"
-  sha256 "392cbf105c2fd474fdbcd4f3006fd11a13e943cf67cbba7780e60533b0dc47b7"
+  version "1.0.1"
+  sha256 "b6e32930fe11ed1c8de91b3ee2690494cf1da699b8bc72b200a0317b23c7851c"
 
   url "https://github.com/datwinz/renicer/releases/download/v#{version}/renicer.zip"
   name "Renicer"
@@ -16,7 +16,7 @@ cask "renicer" do
   binary "#{appdir}/renicer.app/Contents/MacOS/renicer"
 
   zap trash: [
-    "~/Library/Saved Application State/com.example.renicer.savedState",
     "~/Library/Preferences/fyne/com.example.renicer/",
+    "~/Library/Saved Application State/com.example.renicer.savedState",
   ]
 end
