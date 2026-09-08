@@ -1,4 +1,4 @@
-class Libnfs < Formula
+class LibnfsDt < Formula
   desc "C client library for NFS"
   homepage "https://github.com/sahlberg/libnfs"
   url "https://github.com/sahlberg/libnfs/archive/refs/tags/libnfs-7.0.1.tar.gz"
